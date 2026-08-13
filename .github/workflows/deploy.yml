@@ -20,18 +20,14 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install Frontend Dependencies
-        run: |
-          cd frontend
-          npm install
+      - name: Install Dependencies
+        run: npm install
 
       - name: Build Production Angular Site
-        run: |
-          cd frontend
-          npx ng build --base-href /thefacecoffee/
+        run: npx ng build --base-href /thefacecoffee/
 
       - name: Deploy to gh-pages branch
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: frontend/dist/frontend/browser
+          folder: dist/frontend/browser
           branch: gh-pages
