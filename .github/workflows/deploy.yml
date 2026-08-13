@@ -29,5 +29,5 @@ jobs:
       - name: Deploy to gh-pages branch
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist/frontend/browser
+          folder: docs/browser
           branch: gh-pages

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ibrahimahamada27.github.io/thefacecoffee/sitemap.xml
