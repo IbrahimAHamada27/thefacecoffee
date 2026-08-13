@@ -45,7 +45,24 @@ footer a:hover {
 .footer-bottom {
   text-align: center;
   border-top: 1px solid rgba(255,255,255,0.1);
-  padding-top: 20px;
+  padding-top: 22px;
   font-size: 14px;
-  color: #aaa;
+  color: rgba(255,255,255,0.7);
+}
+
+.footer-bottom p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.engineer-credit {
+  color: var(--mustard-yellow);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.engineer-credit:hover {
+  color: var(--warm-orange);
+  text-decoration: underline;
 }

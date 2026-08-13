@@ -713,6 +713,14 @@
     padding: 24px;
   }
 
+  /* Gallery section 3 images stacked vertically on mobile */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
   .category-chips {
     flex-wrap: nowrap;
     overflow-x: auto;
