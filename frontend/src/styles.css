@@ -1,0 +1,143 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  /* THE FACE Luxury Coffee Color Palette */
+  --dusty-blue: #4B637B;
+  --warm-cream: #FAF5ED;
+  --hero-bg-start: #FAF5ED;
+  --hero-bg-end: #F1E7DA;
+  --mustard-yellow: #F3B32C;
+  --warm-orange: #E05A2B;
+  --soft-white: #FCFAF7;
+  --dark-slate: #2D3E50;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  background-color: var(--soft-white);
+  color: var(--dark-slate);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  margin: 0 0 1rem 0;
+  color: var(--dusty-blue);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Common Layout Containers */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+}
+
+/* Primary Button Style */
+.btn-primary {
+  background-color: var(--warm-orange);
+  color: var(--soft-white);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #d65d2f;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: var(--dusty-blue);
+  color: var(--soft-white);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #526678;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(103, 127, 149, 0.4);
+}
+
+/* Animations & Modern FX */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 0 0 rgba(239, 118, 69, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(239, 118, 69, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(239, 118, 69, 0); }
+}
+
+/* Scroll Animations */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in-up.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+.pulse-glow {
+  animation: pulseGlow 3s infinite;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 15px 0 rgba(31, 38, 135, 0.05);
+}
+
+.dark-glass {
+  background: rgba(62, 79, 97, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
